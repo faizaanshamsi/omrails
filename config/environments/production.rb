@@ -69,7 +69,7 @@ Omrails::Application.configure do
   config.paperclip_defaults = {
     :storage => :s3,
     :s3_credentials => {
-     :bucket => "faizaanomrails.s3.amazonaws.com",
+     :bucket => "faizaanomrails",
      :access_key_id => "AKIAI3JCWWN65L55UFYQ",
      :secret_access_key => "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"
     }
