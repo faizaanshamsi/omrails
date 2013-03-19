@@ -7,5 +7,8 @@ class Pin < ActiveRecord::Base
   						content_type: { content_type: ['image/jpeg', 'image/jpg', 'image/png', 'image/gif'] },
   						size: { less_than: 5.megabytes }
   belongs_to :user
-  has_attached_file :image, styles: { medium: "320x240>"}
+  has_attached_file :image, styles: { medium: "320x240>"}, 
+  	 				:storage => :s3,
+    				:s3_credentials => "#{RAILS_ROOT}/config/environments/production.rb",
+     				:path => "/:style/:id/:filename"
 end
