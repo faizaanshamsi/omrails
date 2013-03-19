@@ -64,11 +64,12 @@ Omrails::Application.configure do
   # Log the query plan for queries taking more than this (works
   # with SQLite, MySQL, and PostgreSQL)
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
+  
   # config/environments/production.rb
   config.paperclip_defaults = {
     :storage => :s3,
     :s3_credentials => {
-     :bucket => "faizaanomrails",
+     :bucket => "faizaanomrails.s3.amazonaws.com",
      :access_key_id => "AKIAI3JCWWN65L55UFYQ",
      :secret_access_key => "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"
     }
