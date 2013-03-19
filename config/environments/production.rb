@@ -72,6 +72,7 @@ Omrails::Application.configure do
      :bucket => "faizaanomrails",
      :access_key_id => "AKIAI3JCWWN65L55UFYQ",
      :secret_access_key => "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"
+     :s3_host_name: 'faizaanomrails.s3.amazonaws.com'
     }
   }
 end
